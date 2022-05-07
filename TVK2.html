@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <link rel="icon" href="image/logo/netlink.jpg" sizes="65x65">
+     <title>Netlink Broadcaster</title>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="Netlink Broadcaster is provider">
+     <meta name="keywords" content="iptv, netlink broadcaster, live event, concert, boxing, sport">
+     <meta name="author" content="Yim Monireak">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+     <meta property="og:url" content="http://netlinkbroadcaster.com" />
+     <meta property="og:type" content="iptv, TV online" />
+     <meta property="og:title" content="ទូរទស្សន៏ក្នុងដៃអ្នក" />
+     <meta property="og:image" content="image/logo/tvk2.png" />
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/font-awesome.min.css">
+     <link rel="stylesheet" href="css/aos.css">
+     <link rel="stylesheet" href="css/owl.carousel.min.css">
+     <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/templatemo-digital-trend.css">
+
+</head>
+<body>
+
+     <!-- MENU BAR -->
+    <nav class="navbar navbar-expand-lg position-absolute">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="image/logo/netlink sp.png" alt="Logo" width="50" height="50">   
+            <img src="image/logo/Netlink Broadcaster.png" alt="Logo" width="220" height="45">
+          </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="អំពីយើង.html#about" class="nav-link">អំពីយើង</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ប្រព័ន្ធបណ្ដាញ.html#about" class="nav-link">ប្រព័ន្ធបណ្ដាញ</a>
+                </li>
+                <li class="nav-item">
+                    <a href="សេវាកម្ម.html#about" class="nav-link">សេវាកម្ម</a>
+                </li>
+                <li class="nav-item">
+                    <a href="https://m.me/NetlinkBroadcaster" class="nav-link contact">ទំនាក់ទំនង</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>
+
+
+     <!-- BLOG -->
+     <section class="blog section-padding">
+          <div class="container">
+            <div class="col-lg-12 text-center ">
+              <img src="image/logo/live_streaming.gif" alt="Logo" width="12%" >  
+              <img src="image/logo/tvk2.png" alt="Logo" width="12%" >
+            </div>
+                
+                <video id="video" width="100%" controls loop autoplay></video>
+                <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+                <script>
+                    var video = document.getElementById("video");
+                    var videoSrc = "https://livefta.malimarcdn.com/tvkedge/tvk2.stream/master.m3u8";
+                    if (Hls.isSupported()) {
+                       var hls = new Hls();
+                       hls.loadSource(videoSrc);
+                       hls.attachMedia(video);
+                    }
+                     else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+                       video.src = videoSrc;
+                    }
+                </script>
+                        &nbsp;&nbsp;&nbsp;
+                        <div class="col-lg-12 text-center">
+                          <h2 class="mb-4" data-aos="fade-up"> ប៉ុស្តិ៍ទូរទស្សន៍ </h2>
+                        </div>
+                        <a href="index.html"> <img src="image/logo/netlink sp.png" alt="Logo" width="15%" ><img></a>
+                        <a href="SEATV.html"> <img src="image/logo/seatv.png" alt="Logo" width="15%" ><img></a>
+                        <a href="TVK.html"> <img src="image/logo/tvk.png" alt="Logo" width="15%" ><img></a>
+                        <a href="TVK2.html"> <img src="image/logo/tvk2.png" alt="Logo" width="15%" ><img></a>
+                        <a href="PNN.html"> <img src="image/logo/pnn.png" alt="Logo" width="15%" ><img></a>
+                        <a href="BTV.html"> <img src="image/logo/btv.png" alt="Logo" width="15%" ><img></a>
+                        <a href="bayon.html"> <img src="image/logo/bayon.png" alt="Logo" width="15%" ><img></a>
+                        <a href="FreshNews.html"> <img src="image/logo/fn.png" alt="Logo" width="15%" ><img></a>
+                        <a href="nasa.html"> <img src="image/logo/nasa.png" alt="Logo" width="15%" ><img></a>  
+
+                        
+          </div>
+     </section>
+
+     <!-- SCRIPTS -->
+     <script src="js/jquery.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/aos.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script src="js/custom.js"></script>
+
+</body>
+</html>
