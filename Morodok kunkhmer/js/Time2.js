@@ -3,7 +3,7 @@
   var now2 = new Date().getTime();
   
     var distance2 = countDownDate2 - now2;
-    var endLive2 = new Date("July 5, 2022 17:00:00").getTime() - now2;
+    var endLive2 = new Date("July 9, 2022 17:00:00").getTime() - now2;
     var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
     var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
@@ -16,6 +16,6 @@
     }
     if(endLive2 < 0){
       
-      document.getElementById("demo2").innerHTML = "ENDLive";
+      document.getElementById("demo2").innerHTML = "END Live";
     }
   }, 1000);
