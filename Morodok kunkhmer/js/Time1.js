@@ -16,6 +16,6 @@
     }
     if(endLive1 < 0){
       
-      document.getElementById("demo1").innerHTML = "ENDLive";
+      document.getElementById("demo1").innerHTML = "END Live";
     }
   }, 1000);
