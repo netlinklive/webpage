@@ -1,26 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <link rel="icon" href="image/logo/seatv.png" sizes="65x65">
-     <title>SEATV Digital</title>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-     <meta name="description" content="Netlink Broadcaster is provider media streaming service">
-     <meta name="keywords" content="iptv, netlink broadcaster, live event, concert, boxing, sport">
-     <meta name="author" content="Yim Monireak">
-     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-     <link rel="stylesheet" href="css/bootstrap.min.css">
-     <link rel="stylesheet" href="css/font-awesome.min.css">
-     <link rel="stylesheet" href="css/aos.css">
-     <link rel="stylesheet" href="css/owl.carousel.min.css">
-     <link rel="stylesheet" href="css/owl.theme.default.min.css">
-     
+<link rel="icon" href="image/logo/seatv.png" sizes="65x65">
+<title>SEATV Digital</title>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="Netlink Broadcaster is provider media streaming service">
+<meta name="keywords" content="iptv, netlink broadcaster, live event, concert, boxing, sport">
+<meta name="author" content="Yim Monireak">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
 
-     <!-- MAIN CSS -->
-     <link rel="stylesheet" href="css/templatemo-digital-trend.css">
-
+<link rel="stylesheet" href="css/templatemo-digital-trend.css">
 </head>
 <body>
 
+<nav class="navbar navbar-expand-lg position-absolute">
+<div class="container">
+<a class="navbar-brand" href="index.html">
+<img src="image/logo/seatv logo.png" alt="Logo" width="70" height="45">
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item">
+<a href="កម្មវិធីអាស៊ីអាគ្នេយ៏.html#about" class="nav-link">កម្មវិធីអាស៊ីអាគ្នេយ៏</a>
+</li>
+<li class="nav-item">
+<a href="វិទ្យុអាស៊ីអាគ្នេយ៏.html#about" class="nav-link">វិទ្យុអាស៊ីអាគ្នេយ៏</a>
+</li>
+<li class="nav-item">
+<a href="អត្ថបទ.html#about" class="nav-link">អត្ថបទ</a>
+</li>
+<li class="nav-item">
+<a href="ទំនាក់ទំនង.html#about" class="nav-link contact">ទំនាក់ទំនង</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<section class="blog section-padding">
+<div class="container">
+<div class="col-lg-12 text-center">
+<h3 class="mb-4" data-aos="fade-up"> វិទ្យុអាស៊ីអាគ្នេយ៏ FM 106Mhz </h3>
+</div>
+<video id="video" width="100%" controls loop autoplay></video>
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+<script>
+                          var video = document.getElementById("video");
+                          var videoSrc = "https://fmseatv.netlinkbroadcaster.com/hls/test.m3u8";
+                          if (Hls.isSupported()) {
+                             var hls = new Hls();
+                             hls.loadSource(videoSrc);
+                             hls.attachMedia(video);
+                          }
+                           else if (video.canPlayType("application/vnd.apple.mpegurl")) {
+                             video.src = videoSrc;
+                          }
+                      </script>
+&nbsp;
+
+
+</div>
+</section>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/custom.js"></script>
 </body>
 </html>
