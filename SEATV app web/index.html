@@ -60,7 +60,7 @@
      <!-- BLOG -->
      <section class="blog section-padding">
       <div class="container">
-      <video id="video" width="100%" loop muted id="autoplay"></video>
+      <video id="video" width="100%" controls loop autoplay></video>
       <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
       <script>
                           var video = document.getElementById("video");
@@ -73,11 +73,6 @@
                            else if (video.canPlayType("application/vnd.apple.mpegurl")) {
                              video.src = videoSrc;
                           }
-       </script>
-       <script>
-          window.onload = funtion() {
-                document.getElementById("autoplay").play();
-          }
        </script>
       &nbsp;&nbsp;&nbsp;
       <center><h5 id="demo"></h5></center>
