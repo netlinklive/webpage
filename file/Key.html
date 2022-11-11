@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Press a key on the keyboard in the input field.</p>
+
+<input type="text" size="40" onkeydown="myFunction(event)">
+
+<p id="demo"></p>
+<p id="po"></p>
+
+<script>
+function myFunction(event) {
+  var x = event.key;
+  document.getElementById("demo").innerHTML = "The pressed key was: " + x;
+  
+  if(x == 'ArrowRight'){
+  document.getElementById("po").innerHTML = "Yes";
+  }
+  
+}
+
+</script>
+
+</body>
+</html>
