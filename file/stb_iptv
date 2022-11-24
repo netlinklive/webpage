@@ -1,3 +1,4 @@
+#EXTM3U
 #EXTINF:-1 tvg-id="Netlink.kh" status="online",Netlink
 https://netlinkserver.automatio.biz:5443/NetlinkLive/streams/SrIBjMW5dIej1669128271897.m3u8
 #EXTINF:-1 tvg-id="FreshNews.kh" status="online",FreshNews
@@ -8,9 +9,19 @@ https://seatv.netlinkbroadcaster.com/hls/test.m3u8
 https://livefta.malimarcdn.com/tvkedge/tvkhd.stream/master.m3u8
 #EXTINF:-1 tvg-id="TVK2.kh" status="online",TVK 2
 https://livefta.malimarcdn.com/tvkedge/tvk2.stream/master.m3u8
+#EXTINF:-1 tvg-id="PPnews.kh" status="online",PPnews
+https://ppnews.netlinkbroadcaster.com/hls/test.m3u8
 #EXTINF:-1 tvg-id="NASA.kh" status="online",NASA
 https://netlinkserver.automatio.biz:5443/NetlinkLive/streams/CXnhqr2U0btQ1668947431091.m3u8
 #EXTINF:-1 tvg-id="CartoonNetworkArabic.ae",Cartoon Network Arabia
 https://shls-cartoon-net-prod-dub.shahid.net/out/v1/dc4aa87372374325a66be458f29eab0f/index.m3u8
-#EXTINF:-1 tvg-id="PPnews.kh" status="online",PPnews
-https://ppnews.netlinkbroadcaster.com/hls/test.m3u8
+#EXTINF:-1 tvg-id="AbuDhabiSports1.ae" status="online",Abu Dhabi Sports 1
+https://admdn1.cdn.mangomolo.com/adsports1/smil:adsports1.stream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="AbuDhabiSports2.ae" status="online",Abu Dhabi Sports 2
+https://admdn5.cdn.mangomolo.com/adsports2/smil:adsports2.stream.smil/playlist.m3u8
+#EXTINF:-1 tvg-id="ACCNetwork.us" status="online",ACC Network
+https://a.jsrdn.com/broadcast/542cb2ce3c/+0000/c.m3u8
+#EXTINF:-1 tvg-id="AllSports.br" status="online",All Sports
+https://5cf4a2c2512a2.streamlock.net/dgrau/dgrau/playlist.m3u8
+#EXTINF:-1 tvg-id="BEKSportsWest.us" status="online",BEK TV Sports West
+https://cdn3.wowza.com/5/ZWQ1K2NYTmpFbGsr/BEK-WOWZA-1/smil:BEKPRIMEW.smil/playlist.m3u8
