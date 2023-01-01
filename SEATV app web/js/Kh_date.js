@@ -3,4 +3,4 @@ const months = ["មករា","កម្ភ:","មិនា","មេសា","�
 const T = new Date();
 let date = dates[T.getDate()];
 let month = months[T.getMonth()];
-document.getElementById("demo").innerHTML = "ថ្ងៃទី" + date + " ខែ" + month + " ២០២២" ;
+document.getElementById("demo").innerHTML = "ថ្ងៃទី" + date + " ខែ" + month + " ២០២៣" ;
